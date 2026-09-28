@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Clone Trooper Deals - BIN + Auctions",
+    "query": "LEGO clone trooper lot",
+    "detection_hint": "Find every complete or mostly complete LEGO minifigure, including partially hidden figures.",
+    "reference_images": [],
+    "wanted_bricklink_ids": [],
+    "require_reference_match": false,
+
+    "min_discount_percent": 25,
+
+    "auction_early_alert_discount_percent": 60,
+    "auction_early_min_room_usd": 15,
+    "auction_ending_soon_minutes": 60,
+
+    "pre_screen_exclude_title_terms": [
+      "instructions only",
+      "manual only"
+    ],
+
+    "max_results": 30,
+    "filters": {
+      "min_price_usd": 0,
+      "max_price_usd": 150,
+      "price_currency": "USD",
+      "buying_options": ["FIXED_PRICE", "AUCTION"],
+      "conditions": ["USED"],
+      "item_location_country": "US",
+      "delivery_country": "US",
+      "search_in_description": true
+    }
+  },
+  {
+    "name": "501st Reference Search",
+    "query": "LEGO clone trooper minifigure",
+    "detection_hint": "Find every complete or mostly complete LEGO minifigure visible in the listing photo.",
+    "reference_images": [
+      "references/501st/front.jpg"
+    ],
+    "wanted_bricklink_ids": [],
+    "require_reference_match": true,
+
+    "min_discount_percent": 20,
+    "auction_early_alert_discount_percent": 55,
+    "auction_early_min_room_usd": 10,
+    "auction_ending_soon_minutes": 60,
+
+    "max_results": 25,
+    "filters": {
+      "max_price_usd": 100,
+      "price_currency": "USD",
+      "buying_options": ["FIXED_PRICE", "AUCTION"],
+      "item_location_country": "US",
+      "delivery_country": "US"
+    }
+  }
+]
